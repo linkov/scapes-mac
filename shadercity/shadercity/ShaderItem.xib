@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ShaderItem" customModule="preview" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="xVO-xT-eis" id="zqL-QV-j8h"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xVO-xT-eis">
+                    <rect key="frame" x="20" y="20" width="160" height="160"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="8eJ-ia-D8H"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xVO-xT-eis" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="BoY-MJ-qkx"/>
+                <constraint firstItem="xVO-xT-eis" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="VVy-r4-jF1"/>
+                <constraint firstAttribute="trailing" secondItem="xVO-xT-eis" secondAttribute="trailing" constant="20" id="bUR-BS-8JX"/>
+                <constraint firstAttribute="bottom" secondItem="xVO-xT-eis" secondAttribute="bottom" constant="20" id="rW5-F7-tGN"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+        <collectionViewItem nibName="ShaderItem" identifier="photoItemIdentifier" id="QTF-1e-Ceg" customClass="ShaderItem" customModule="preview" customModuleProvider="target"/>
+    </objects>
+</document>
