@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEF29B7EC26F43CF3C5C73C1 /* Pods_shadercity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D326B28A77ADDB280358C5F5 /* Pods_shadercity.framework */; };
+		F128AE2A23CB628100729F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17C927523CA869D00E2A62D /* Assets.xcassets */; };
 		F17C926623CA845A00E2A62D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C926223CA845A00E2A62D /* MainView.swift */; };
 		F17C926723CA845A00E2A62D /* ConfigureSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C926123CA845A00E2A62D /* ConfigureSheet.swift */; };
 		F17C926823CA845A00E2A62D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C926523CA845A00E2A62D /* Fonts.swift */; };
@@ -28,6 +30,7 @@
 		F17C928A23CA90F500E2A62D /* ShaderItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = F17C928623CA90F500E2A62D /* ShaderItem.xib */; };
 		F17C928C23CA942B00E2A62D /* ShaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C928B23CA942B00E2A62D /* ShaderInfo.swift */; };
 		F17C928D23CA942B00E2A62D /* ShaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C928B23CA942B00E2A62D /* ShaderInfo.swift */; };
+		F46A7651292AE1E8A98E945B /* Pods_preview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8788852CCE2608E874C0BC9D /* Pods_preview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +47,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07249E75AE84F363F044ACEF /* Pods-shadercity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadercity.release.xcconfig"; path = "Target Support Files/Pods-shadercity/Pods-shadercity.release.xcconfig"; sourceTree = "<group>"; };
+		8109BD0907C6102712DC54A1 /* Pods-shadercity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shadercity.debug.xcconfig"; path = "Target Support Files/Pods-shadercity/Pods-shadercity.debug.xcconfig"; sourceTree = "<group>"; };
+		8788852CCE2608E874C0BC9D /* Pods_preview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_preview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A19E59248C8D3E68BEB0F1D /* Pods-preview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-preview.release.xcconfig"; path = "Target Support Files/Pods-preview/Pods-preview.release.xcconfig"; sourceTree = "<group>"; };
+		9E696DF2C6AE9B8322881C89 /* Pods-preview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-preview.debug.xcconfig"; path = "Target Support Files/Pods-preview/Pods-preview.debug.xcconfig"; sourceTree = "<group>"; };
+		D326B28A77ADDB280358C5F5 /* Pods_shadercity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shadercity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17C925423CA842A00E2A62D /* shadercity.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shadercity.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17C925B23CA842A00E2A62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F17C926123CA845A00E2A62D /* ConfigureSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheet.swift; sourceTree = "<group>"; };
@@ -68,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF29B7EC26F43CF3C5C73C1 /* Pods_shadercity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,15 +85,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46A7651292AE1E8A98E945B /* Pods_preview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8085945BED625DFB664AEAB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E696DF2C6AE9B8322881C89 /* Pods-preview.debug.xcconfig */,
+				8A19E59248C8D3E68BEB0F1D /* Pods-preview.release.xcconfig */,
+				8109BD0907C6102712DC54A1 /* Pods-shadercity.debug.xcconfig */,
+				07249E75AE84F363F044ACEF /* Pods-shadercity.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F158C9C823CAA419004EB163 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8788852CCE2608E874C0BC9D /* Pods_preview.framework */,
+				D326B28A77ADDB280358C5F5 /* Pods_shadercity.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +119,7 @@
 				F17C927223CA869C00E2A62D /* preview */,
 				F17C925523CA842A00E2A62D /* Products */,
 				F158C9C823CAA419004EB163 /* Frameworks */,
+				8085945BED625DFB664AEAB3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F17C925E23CA842A00E2A62D /* Build configuration list for PBXNativeTarget "shadercity" */;
 			buildPhases = (
+				4B22B71B166DF66B48E16BB7 /* [CP] Check Pods Manifest.lock */,
 				F17C924F23CA842A00E2A62D /* Headers */,
 				F17C925023CA842A00E2A62D /* Sources */,
 				F17C925123CA842A00E2A62D /* Frameworks */,
@@ -171,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F17C927C23CA869D00E2A62D /* Build configuration list for PBXNativeTarget "preview" */;
 			buildPhases = (
+				034C3ADF1CB4EDC4BAC8C249 /* [CP] Check Pods Manifest.lock */,
 				F17C926D23CA869C00E2A62D /* Sources */,
 				F17C926E23CA869C00E2A62D /* Frameworks */,
 				F17C926F23CA869C00E2A62D /* Resources */,
@@ -229,6 +256,7 @@
 			files = (
 				F17C928923CA90F500E2A62D /* ShaderItem.xib in Resources */,
 				F17C926C23CA860B00E2A62D /* ConfigureSheet.xib in Resources */,
+				F128AE2A23CB628100729F71 /* Assets.xcassets in Resources */,
 				F17C926B23CA85DD00E2A62D /* mononoki-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +274,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		034C3ADF1CB4EDC4BAC8C249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-preview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B22B71B166DF66B48E16BB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shadercity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F17C925023CA842A00E2A62D /* Sources */ = {
@@ -402,6 +477,7 @@
 		};
 		F17C925F23CA842A00E2A62D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8109BD0907C6102712DC54A1 /* Pods-shadercity.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,6 +494,7 @@
 		};
 		F17C926023CA842A00E2A62D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07249E75AE84F363F044ACEF /* Pods-shadercity.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -434,6 +511,7 @@
 		};
 		F17C927D23CA869D00E2A62D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E696DF2C6AE9B8322881C89 /* Pods-preview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = preview/preview.entitlements;
@@ -460,6 +538,7 @@
 		};
 		F17C927E23CA869D00E2A62D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A19E59248C8D3E68BEB0F1D /* Pods-preview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = preview/preview.entitlements;

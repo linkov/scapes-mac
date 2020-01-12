@@ -1,6 +1,12 @@
 import ScreenSaver
 import WebKit
 
+
+import AppCenter
+import AppCenterCrashes
+
+
+
 class MainView: ScreenSaverView {
 
     
@@ -25,6 +31,11 @@ class MainView: ScreenSaverView {
     animateOneFrame()
     
 //    if startedFromTestApp { startAnimation() }
+    
+    MSAppCenter.start("89e07be7-7c9b-4811-88bb-283ca0bbaf5e", withServices:[
+      MSCrashes.self
+    ])
+    
   }
 
   func loadFonts() {
